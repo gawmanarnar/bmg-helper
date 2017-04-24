@@ -6,7 +6,7 @@ var AlexaSkill = require('./AlexaSkill'),
 var APP_ID = '';
 
 /**
- * Superhero Miniature Game Reference is a child of AlexaSkill.
+ * Batman Miniature Game Reference is a child of AlexaSkill.
  * To read more about inheritance in JavaScript, see the link below.
  *
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#Inheritance
@@ -20,7 +20,7 @@ RuleReference.prototype = Object.create(AlexaSkill.prototype);
 RuleReference.prototype.constructor = RuleReference;
 
 RuleReference.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
-    var speechText = "Welcome to the Unofficial Superhero Tabletop Assistant, a fan-made rules reference for the Marvel and DC Universe Miniature Game. You can ask a question like, what does the Mastermind ability do? ... Now, what would you like to know?";
+    var speechText = "Welcome to the Unofficial Batman Miniature Game Assistant, a fan-made rules reference for the Batman Miniature Game. You can ask a question like, what does the Acrobat ability do? ... Now, what would you like to know?";
     // If the user either does not reply to the welcome message or says something that is not
     // understood, they will be prompted again with this text.
     var repromptText = "For instructions on what you can say, please say help me.";
